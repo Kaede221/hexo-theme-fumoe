@@ -1,0 +1,29 @@
+/*
+微调一些样式, 不然不好看
+这里必须要使用important, 不然没用
+*/
+ul li::before {
+  border: 0.21em solid #0068ca !important;
+  background: #fff !important;
+}
+
+/* 设置加粗部分的颜色 */
+strong {
+  color: #0068ca;
+}
+
+/* 设置文章中链接的颜色 */
+p a {
+  border-bottom: solid 2px #0068ca !important;
+}
+
+/* 把未读两个字删除, 并且不占用位置 */
+/* 还有整个分类栏, 因为我压根用不到分类, 何况还有Bug */
+div a .unvisited-post {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+/* 还修改了边上导航的颜色, 这个东西不在这里
+需要的话, 打开css/_global/index.styl, 搜素--anzhiyu-lighttext就可以修改了
+*/
